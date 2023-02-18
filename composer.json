@@ -1,0 +1,34 @@
+{
+    "name": "wkukielczak/php-utils",
+    "description": "Handy set of utils for PHP projects",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Wkukielczak\\PhpUtils\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Wkukielczak\\PhpUtils\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Wojciech Kukiełczak"
+        }
+    ],
+    "require": {
+        "php": ">=8.2",
+        "ext-pcov": "*",
+        "ext-xdebug": "*",
+        "ext-pcntl": "*",
+        "ext-openssl": "*",
+        "ext-soap": "*",
+        "doctrine/orm": "^2.14"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "symfony/cache": "^6.2"
+    }
+}
