@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.0.1
+-----
+
+Project dependencies were changed so the lib don't require PHP extensions required by PHPUnit anymore.
+
 1.0.0
 -----
 
