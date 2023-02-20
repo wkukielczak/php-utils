@@ -20,14 +20,14 @@
     ],
     "require": {
         "php": ">=8.2",
-        "ext-pcov": "*",
-        "ext-xdebug": "*",
-        "ext-pcntl": "*",
         "ext-openssl": "*",
-        "ext-soap": "*",
         "doctrine/orm": "^2.14"
     },
     "require-dev": {
+        "ext-pcov": "*",
+        "ext-xdebug": "*",
+        "ext-pcntl": "*",
+        "ext-soap": "*",
         "phpunit/phpunit": "^10.0",
         "symfony/cache": "^6.2"
     }
