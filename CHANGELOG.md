@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0.2
+-----
+
+- Some PHPDocs were added/updated so all the methods has at least basic descriptions
+- Minimal required PHP version lowered down to 7.0 to preserve compatibility with more projects 
+
 1.0.1
 -----
 
