@@ -3,11 +3,19 @@
 namespace Wkukielczak\PhpUtils;
 
 /**
+ * This class was created by using the code found on the StackOverflow
  * Credits: https://stackoverflow.com/a/3291689/3029310.
  */
 class Crypto
 {
-    public static function randSecure($min, $max): int
+    /**
+     * Securely generate random number in given range
+     *
+     * @param int $min Min number in range
+     * @param int $max Max number in range
+     * @return int Generated number
+     */
+    public static function randSecure(int $min, int $max): int
     {
         $range = $max - $min;
         if ($range < 0) {
@@ -25,6 +33,12 @@ class Crypto
         return $min + $rnd;
     }
 
+    /**
+     * Use the secure random number generator to create a random string with the given length
+     *
+     * @param int $length Length of the string (default: 32)
+     * @return string Generated string
+     */
     public static function getToken(int $length = 32): string
     {
         $token = '';
