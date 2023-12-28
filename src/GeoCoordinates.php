@@ -19,7 +19,7 @@ class GeoCoordinates
      */
     const EARTH_RADIUS_MI = 3959;
 
-    private static function getAliasedFiledName(QueryBuilder $queryBuilder, string $fieldName): string
+    private static function getAliasedFieldName(QueryBuilder $queryBuilder, string $fieldName): string
     {
         $rootAliases = $queryBuilder->getRootAliases();
         if (!empty($rootAliases)) {
@@ -58,8 +58,8 @@ class GeoCoordinates
         int $earthRadius = self::EARTH_RADIUS_KM
     ): void
     {
-        $latitudeField = self::getAliasedFiledName($queryBuilder, 'latitude');
-        $longitudeField = self::getAliasedFiledName($queryBuilder, 'longitude');
+        $latitudeField = self::getAliasedFieldName($queryBuilder, 'latitude');
+        $longitudeField = self::getAliasedFieldName($queryBuilder, 'longitude');
 
         $dql = sprintf('(%d * Acos (Cos (Radians(%F)) * Cos(Radians(%s)) * Cos(Radians(%s) - Radians(%F)) + 
             Sin(Radians(%F)) * Sin(Radians(%s)))) AS distance', $earthRadius, $latitude, $latitudeField,
