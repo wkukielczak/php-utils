@@ -26,13 +26,14 @@ Edit your `composer.json` file and add the following:
 
 # Utils index
 
-- `ArrayUtil` contains helpers to use on arrays
-- `Crypto` is a safe number and string generator
-- `GeoCoordinates` is intended to use whenever 
+- `ArrayUtil` contains helpers to use on arrays ([how to use](docs/ARRAY_UTIL.md))
+- `Crypto` is a safe number and string generator ([how to use](docs/CRYPTO.md))
+- `GeoCoordinates` is intended to use whenever
   you need to count geographic distance between 
   two points or query the SQL database to find 
-  the nearest spots
-- `Number` to operate on numbers
+  the nearest spots ([how to use](docs/GEO_COORDINATES.md))
+- `Number` to operate on numbers ([how to use](docs/NUMBER.md))
+- `ToArrayTrait` a simple way to add "toArray()" method to your models ([how to use](docs/TO_ARRAY.md))
 
 If you believe something is missing - you are right!
 That's because I did not need it. But feel free to use
