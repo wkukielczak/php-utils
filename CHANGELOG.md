@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.0.3
+-----
+
+- Added `ToArrayTrait` trait which enables "toArray" method for every object. 
+The method gets all the object's properties and put their non-null values into an array.
+- Private method's name typo fixed in GeoCoordinates class
+- Minimal PHP version bumped to 8.0 in `composer.json`
+- Utils docs added
+
 1.0.2
 -----
 
